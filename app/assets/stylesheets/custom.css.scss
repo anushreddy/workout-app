@@ -1,5 +1,47 @@
+@import "bootstrap-sprockets";
 @import "bootstrap";
 
-.jumbotron{
-  margin-top: 50px;
+body{
+  margin-top: 80px;
 }
+
+// Navbar styling
+.navbar {
+  background: #ff6161;
+  padding-bottom: 20px;
+ }
+ 
+ .navbar-default .navbar-brand {
+   padding-top: 25px;
+   font-size: 150%;
+   font-weight: bold;
+   color: #ffffff;
+ }
+ 
+ .navbar-default .navbar-brand:hover {
+   color: #eeeb46;
+ }
+ 
+ .navbar-default {
+   border: #ff6161;
+ }
+ 
+ .navbar-nav {
+   padding-top: 10px;
+   padding-right: 20px;
+ }
+ 
+ .navbar-default .navbar-nav li > a {
+   font-weight: bold;
+   font-size: 130%;
+   color: #ffffff;
+ }
+ 
+ .navbar-default .navbar-nav li > a:hover {
+   color: #eeeb46;
+ }
+ 
+ // Form styling
+ .page-heading, div > label {
+   color: #64103F;
+ }
