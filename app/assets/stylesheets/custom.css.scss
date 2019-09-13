@@ -45,3 +45,17 @@ body{
  .page-heading, div > label {
    color: #64103F;
  }
+
+ #error_explanation {
+  background-color: #f2dede; 
+  color: #a94442; 
+  text-align: left;
+  padding: 5px 20px; 
+  margin-bottom: 30px;
+  margin-left: 25%;
+  width: auto;
+}
+  
+#error_explanation h2 { 
+font-size: 150%;
+}
