@@ -40,6 +40,18 @@ class ExercisesController < ApplicationController
     end
   end
 
+  def destroy
+    @exercise = current_user.exercises.find params[:id]
+
+    if @exercise.destroy
+      flash[:notice] = "Exercise has been deleted"
+      redirect_to [current_user, @exercise]
+    else
+      flash.now[:danger] = "Exercise has not been deleted"
+      render :new
+    end
+  end
+
   private
 
   def exercise_params
