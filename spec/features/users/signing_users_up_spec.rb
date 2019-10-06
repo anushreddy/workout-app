@@ -9,7 +9,7 @@ RSpec.feature "Users Signup" do
 
     fill_in "First name", with: "John"
     fill_in "Last name", with: "Doe"
-    fill_in "Email", with: "john@example.com"
+    fill_in "Email", with: "john1@example.com"
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
     
@@ -26,7 +26,7 @@ RSpec.feature "Users Signup" do
 
     fill_in "First name", with: ""
     fill_in "Last name", with: ""
-    fill_in "Email", with: "john@example.com"
+    fill_in "Email", with: "john1@example.com"
     fill_in "Password", with: "password"
     fill_in "Password confirmation", with: "password"
     
