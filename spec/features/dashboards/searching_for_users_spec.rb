@@ -12,8 +12,9 @@ RSpec.feature "Searching for Users" do
     fill_in "search_name", with: "Doe"
     click_button "Search"
 
-    expect(page).to have_content(@john.fullname)
-    expect(page).to have_content(@sarah.fullname)
+    expect(page).to have_content(@john.full_name)
+    expect(page).to have_content(@sarah.full_name)
     expect(current_path).to eq ("/dashboards/search")
   end
 end
+
